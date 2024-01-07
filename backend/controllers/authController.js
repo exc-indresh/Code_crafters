@@ -24,10 +24,10 @@ exports.register = catchAsync(async (req, res, next) => {
 
   const filteredBody = filterObj(
     req.body,
-    "firstName",
-    "lastName",
-    "email",
-    "password"
+    firstName,
+    lastName,
+    email,
+    password
   );
 
   // check if a verified user with given email exists

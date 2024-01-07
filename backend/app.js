@@ -56,6 +56,8 @@ app.use(
   })
 );
 
+app.use(express.json());
+
 app.use(cookieParser());
 
 // Setup express response and body parser configurations
